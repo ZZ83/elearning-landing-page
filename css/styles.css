@@ -39,20 +39,28 @@ a {
 }
 
 .btn {
+    border-radius: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 167px;
+    height: 56px;
     color: #fff;
     font-size: 16px;
 }
 
 .btn-header {
-
+    background-color: #13183F;
 }
 
 .btn-main {
-    
+    background: rgb(240,42,166);
+    background: linear-gradient(0deg, rgba(240,42,166,1) 25%, rgba(255,111,72,1) 75%);
 }
 
 .btn-footer {
-    
+    background: rgb(240,42,166);
+    background: linear-gradient(0deg, rgba(240,42,166,1) 25%, rgba(72,81,255,1) 75%); 
 }
 
 @media (min-width: 1440px) {
