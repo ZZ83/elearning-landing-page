@@ -1,10 +1,12 @@
 body {
+    color: #83869A;
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 h1,
 h2,
 h3 {
+    color: #13183F;
     font-weight: 800;
 }
 
@@ -29,6 +31,7 @@ p {
 }
 
 a {
+    color: #F74780;
     font-size: 18px;
     font-weight: 700;
     line-height: 28px;
@@ -36,7 +39,20 @@ a {
 }
 
 .btn {
+    color: #fff;
     font-size: 16px;
+}
+
+.btn-header {
+
+}
+
+.btn-main {
+    
+}
+
+.btn-footer {
+    
 }
 
 @media (min-width: 1440px) {
