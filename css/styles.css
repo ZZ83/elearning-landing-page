@@ -1,3 +1,15 @@
+/*****************               *****************/
+/*****************               *****************/
+/*****************  BASE STYLES  *****************/
+/*****************               *****************/
+/*****************               *****************/
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
 body {
     color: #83869A;
     font-family: 'Plus Jakarta Sans', sans-serif;
@@ -38,30 +50,70 @@ a {
     text-decoration: none;
 }
 
-.btn {
-    border-radius: 50px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 167px;
-    height: 56px;
-    color: #fff;
-    font-size: 16px;
+.container {
+    width: 93%;
+    margin: 0 auto;
 }
 
-.btn-header {
+/*****************               *****************/
+/*****************               *****************/
+/***************** BUTTON STYLES *****************/
+/*****************               *****************/
+/*****************               *****************/
+
+.btn {
+    color: #fff;
+    font-size: 16px;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn--header,
+.btn--footer {
+    width: 140px;
+    height: 48px;
+}
+
+.btn--main {
+    width: 167px;
+    height: 56px;
+}
+
+.btn--header {
     background-color: #13183F;
 }
 
-.btn-main {
+.btn--main {
     background: rgb(240,42,166);
     background: linear-gradient(0deg, rgba(240,42,166,1) 25%, rgba(255,111,72,1) 75%);
 }
 
-.btn-footer {
+.btn--footer {
     background: rgb(240,42,166);
     background: linear-gradient(0deg, rgba(240,42,166,1) 25%, rgba(72,81,255,1) 75%); 
 }
+
+/*****************               *****************/
+/*****************               *****************/
+/***************** HEADER STYLES *****************/
+/*****************               *****************/
+/*****************               *****************/
+
+.header {
+    background-color: orange; 
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*****************               *****************/
+/*****************               *****************/
+/***************** MEDIA QUERIES *****************/
+/*****************               *****************/
+/*****************               *****************/
 
 @media (min-width: 1440px) {
 
@@ -89,4 +141,38 @@ a {
         font-size: 18px;
     }
 
+    .btn--header,
+    .btn--footer {
+        width: 167px;
+        height: 56px;
+    }
+
+    .btm--main{
+        height: 63px;
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
