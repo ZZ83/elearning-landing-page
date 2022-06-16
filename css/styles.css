@@ -79,18 +79,31 @@ a {
     margin-top: 15px;
 }
 
+.btn--header:active {
+    background: #666CA3;
+}
+
+.btn--main:active {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+}
+
+.btn--footer:active {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+}
+
 .btn--header {
+    z-index: 1;
     background-color: #13183F;
 }
 
 .btn--main {
     background: rgb(240,42,166);
-    background: linear-gradient(0deg, rgba(240,42,166,1) 25%, rgba(255,111,72,1) 75%);
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%)
 }
 
 .btn--footer {
     background: rgb(240,42,166);
-    background: linear-gradient(0deg, rgba(240,42,166,1) 25%, rgba(72,81,255,1) 75%); 
+    background: linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%)
 }
 
 /*************************************  
@@ -135,7 +148,7 @@ a {
         display: flex;
         justify-content: center;
         background: rgb(240,42,166);
-        background: linear-gradient(0deg, rgba(240,42,166,1) 25%, rgba(255,111,72,1) 75%);
+        background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
     }
         .courses div:first-child  h2{
             color: #fff;
@@ -159,6 +172,10 @@ a {
     
     .course a {
         margin-top: 30px;
+    }
+
+    .course a:active {
+        color: #FFA7C3;
     }
 
     .course svg {
