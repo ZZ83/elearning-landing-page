@@ -80,6 +80,7 @@ a {
 .btn--main {
     width: 167px;
     height: 56px;
+    margin-top: 15px;
 }
 
 .btn--header {
@@ -109,11 +110,50 @@ a {
     justify-content: space-between;
 }
 
+/*****************                 *****************/
+/*****************                 *****************/
+/***************** HEADlINE STYLES *****************/
+/*****************                 *****************/
+/*****************                 *****************/
+
+.headline {
+    max-width: 400px;
+}
+
+.hero-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-image: url("../assets/image-hero-mobile@2x.webp");
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
 /*****************               *****************/
 /*****************               *****************/
 /***************** MEDIA QUERIES *****************/
 /*****************               *****************/
 /*****************               *****************/
+
+@media (min-width: 768px) { 
+    body {
+        overflow: hidden;
+    }
+
+    .main {
+        margin-top: 7rem;
+        position: relative; 
+    }
+
+    .hero-image {
+        width:  695px;
+        height: 723px;
+        position: absolute;
+        top:   -300px;
+        right: -340px;
+        background-image: url("../assets/image-hero-tablet@2x.webp");
+    }
+}
 
 @media (min-width: 1440px) {
 
@@ -149,6 +189,23 @@ a {
 
     .btm--main{
         height: 63px;
+    }
+
+    .headline {
+        max-width: 500px;
+    }
+    
+    .headline p {
+        max-width: 450px;
+    }
+
+    .hero-image {
+        width:  1046px;
+        height: 938px;
+        
+        top:   -400px;
+        right: -500px;
+        background-image: url("../assets/image-hero-desktop@2x.webp");
     }
 
 }
