@@ -180,7 +180,8 @@ a {
     }
     
     .course a {
-        margin-top: 30px;
+        margin-top: auto;
+        padding-bottom: 30px;
     }
 
     .course a:active {
@@ -318,6 +319,15 @@ footer {
     .course {
         width: 31%;
         height: 345px;
+    }
+
+    .course p {
+        max-width: 330px;
+    }
+
+    .course a {
+   
+        padding-bottom: 70px;
     }
 
   
