@@ -1,7 +1,6 @@
 /*************************************  
  BASE STYLES  
 **************************************/
-
 *,
 *:after,
 *:before {
@@ -54,17 +53,14 @@ a {
     max-width: 1440px;
 }
 
-
 .wrapper {
-    background-color: red;
-    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
     padding-bottom: 100px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
 }
 
 /*************************************  
  BUTTON STYLES  
 **************************************/
-
 .btn {
     color: #fff;
     font-size: 16px;
@@ -116,7 +112,6 @@ a {
 /*************************************  
  HEADER STYLES  
 **************************************/
-
 .header {
     height: 100px;
     display: flex;
@@ -125,9 +120,8 @@ a {
 }
 
 /*************************************  
- HEADLINE STYLES  
+ HEADLINE and HERO IMAGE STYLES  
 **************************************/
-
 .headline {
     max-width: 400px;
 }
@@ -144,23 +138,20 @@ a {
 /*************************************  
  COURSES STYLES  
 **************************************/
-
-
-    .courses div:first-child {
-        height: 120px;
-        padding-top: 20px;
-        background: rgb(240,42,166);
-        background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+.courses div:first-child {
+    height: 120px;
+    padding-top: 20px;
+    background: rgb(240,42,166);
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+}
+    .courses div:first-child  h2{
+        color: #fff;
     }
-        .courses div:first-child  h2{
-            color: #fff;
-        }
 
-
-        .course h2 {
-            margin: 0;
-            max-width: 300px;
-        }
+    .course h2 {
+        margin: 0;
+        max-width: 300px;
+    }
 
 .course {
     width: 100%;
@@ -174,7 +165,6 @@ a {
     display: flex;
     flex-direction: column;
 }
-    
     .course p {
         margin: 0;
     }
@@ -198,9 +188,9 @@ a {
  FOOTER STYLES  
 **************************************/
 footer {
-    /* margin-top: 100px; */
     background-color: #13183F;
 }
+
 .footer {
     height: 120px;
     display: flex;
@@ -209,9 +199,8 @@ footer {
 }
 
 /*************************************  
- MEDIA QUERIES
+ 768px MEDIA QUERIES
 **************************************/
-
 @media (min-width: 768px) { 
     body {
         overflow-x: hidden;
@@ -232,7 +221,6 @@ footer {
         background-image: url("../assets/image-hero-tablet@2x.webp");
     }
 
-
     .courses {
         display: flex;
         flex-wrap: wrap;
@@ -248,11 +236,12 @@ footer {
     .course {
         width: 48%;
     }
-
 }
 
+/*************************************  
+ 1440px MEDIA QUERIES
+**************************************/
 @media (min-width: 1440px) {
-
     h1 {
         font-size: 56px;
         line-height: 70px;
@@ -294,15 +283,13 @@ footer {
     .headline {
         max-width: 500px;
     }
-    
-    .headline p {
-        max-width: 450px;
-    }
+        .headline p {
+            max-width: 450px;
+        }
 
     .hero-image {
         width:  1046px;
         height: 938px;
-        
         top:   -400px;
         right: -500px;
         background-image: url("../assets/image-hero-desktop@2x.webp");
@@ -312,7 +299,6 @@ footer {
         margin-top: 180px;
     }
 
-
     .courses div:first-child {
         height: 345px;
     }
@@ -321,18 +307,14 @@ footer {
         width: 31%;
         height: 345px;
     }
+        .course p {
+            max-width: 330px;
+        }
 
-    .course p {
-        max-width: 330px;
-    }
-
-    .course a {
-   
-        padding-bottom: 70px;
-    }
-
-  
-
+        .course a {
+    
+            padding-bottom: 70px;
+        }
 }
 
 
