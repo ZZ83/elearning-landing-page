@@ -7,6 +7,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 body {
     color: #83869A;
     font-family: 'Plus Jakarta Sans', sans-serif;
@@ -202,10 +207,6 @@ footer {
  768px MEDIA QUERIES
 **************************************/
 @media (min-width: 768px) { 
-    body {
-        overflow-x: hidden;
-    }
-
     .main {
         margin-top: 7rem;
         position: relative; 
