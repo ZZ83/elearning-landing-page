@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/ZZ83/elearning-landing-page)
-- Live Site URL: [Add live site URL here](https://zz83.github.io/elearning-landing-page/)
+- Solution URL: [github repo](https://github.com/ZZ83/elearning-landing-page)
+- Live Site URL: [Live Website](https://zz83.github.io/elearning-landing-page/)
 
 ## My process
 
@@ -46,27 +46,25 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+I was able to get a better understanding of the CSS `position` property, especially when it comes to working with the `relative` and `absolute` values.
 
 ```html
 <h1>Some HTML code I'm proud of</h1>
+<div class="parent">
+  <div class="child"></div>
+</div>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.parent {
+  position: relative;
 }
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+
+.child {
+  position: absolute;
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+When the parent element is set to relative positioning, using position absolute on the child element will position the element relative to the parent element and not the html element.
 
 ### Continued development
 
